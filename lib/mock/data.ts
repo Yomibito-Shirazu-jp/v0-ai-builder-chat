@@ -514,7 +514,7 @@ export const mockWorkflowDetail = {
       rhetorica: {
         model: "gemini-pro",
         prompt:
-          "両者の見解を統合し、経営判断に使える形で結論を提示してください。リスクレベル(低/中/高)、推奨アクション、根拠の3点で構成してください。",
+          "両者の見解を統���し、経営判断に使える形で結論を提示してください。リスクレベル(低/中/高)、推奨アクション、根拠の3点で構成してください。",
       },
       humanApprovalRequired: false,
     },
@@ -618,12 +618,89 @@ export const mockConversation: Conversation = {
 }
 
 export const mockConversationHistory = [
-  { id: "conv-1", title: "請求書テーブルに支払期日を追加", updatedAt: "2026-05-09T02:30:00+09:00", group: "今日" },
-  { id: "conv-2", title: "顧客テーブルに業種を追加", updatedAt: "2026-05-08T14:00:00+09:00", group: "今日" },
-  { id: "conv-3", title: "見積精査ワークフローの作成", updatedAt: "2026-05-07T10:00:00+09:00", group: "今週" },
-  { id: "conv-4", title: "MCP公開設定の確認", updatedAt: "2026-05-05T16:00:00+09:00", group: "今週" },
-  { id: "conv-5", title: "新規テーブル作成: 見積", updatedAt: "2026-04-28T11:00:00+09:00", group: "今週より前" },
+  { id: "conv-1", title: "請求書テーブルに支払期日を追加", updatedAt: "2026-05-09T02:30:00+09:00", group: "今日", pinned: false, firstMessage: "請求書テーブルに支払期日カラムを追加して、過ぎたら自動でアラートを出すようにしたい" },
+  { id: "conv-2", title: "顧客テーブルに業種を追加", updatedAt: "2026-05-08T14:00:00+09:00", group: "今日", pinned: true, firstMessage: "顧客テーブルに業種フィールドを追加したい" },
+  { id: "conv-3", title: "見積精査ワークフローの作成", updatedAt: "2026-05-07T10:00:00+09:00", group: "今週", pinned: true, firstMessage: "提出予定の見積書をAIで精査するワークフローを作成したい" },
+  { id: "conv-4", title: "MCP公開設定の確認", updatedAt: "2026-05-05T16:00:00+09:00", group: "今週", pinned: false, firstMessage: "現在のMCP公開設定を確認したい" },
+  { id: "conv-5", title: "新規テーブル作成: 見積", updatedAt: "2026-04-28T11:00:00+09:00", group: "今週より前", pinned: false, firstMessage: "見積テーブルを新しく作成したい" },
 ]
+
+export const mockConversationWithTrivium: Conversation = {
+  id: "conv-trivium",
+  title: "見積書の精査（TRIVIUM）",
+  createdAt: "2026-05-09T03:00:00+09:00",
+  updatedAt: "2026-05-09T03:05:00+09:00",
+  messages: [
+    {
+      id: "msg-t1",
+      role: "user",
+      content: [
+        {
+          type: "text",
+          text: "株式会社サンプル向けの見積書を精査して。金額4,500,000円、納期2週間、紙単価が市場より15%安い",
+        },
+      ],
+      timestamp: "2026-05-09T03:00:00+09:00",
+    },
+    {
+      id: "msg-t2",
+      role: "assistant",
+      content: [
+        { type: "text", text: "TRIVIUM三層合議で見積書を精査します。" },
+        {
+          type: "tool_call",
+          name: "get_market_prices",
+          input: { category: "paper", date: "2026-05" },
+          output: { average_price: 12500, unit: "per_1000_sheets" },
+        },
+        {
+          type: "trivium_trace",
+          trace: {
+            grammatica: {
+              model: "gpt-4",
+              tokensIn: 1234,
+              tokensOut: 567,
+              cost: 0.45,
+              output: "見積書を確認しました。以下のリスクと機会が見られます。\n\nリスク:\n1. 紙単価が市場価格より15%安い (調達リスク)\n2. 納期2週間は通常の60%、特急対応費が含まれていない\n3. 校正回数の上限が定義されていない\n\n機会:\n1. ロット数が大きく追加発注の可能性が高い\n2. 顧客の年商規模から長期取引に発展しうる",
+            },
+            logica: {
+              model: "claude-sonnet",
+              tokensIn: 1890,
+              tokensOut: 412,
+              cost: 0.27,
+              output: "GRAMMATICAの分析は概ね妥当ですが、3点修正します。\n\n1. 紙単価15%安の指摘は正しいが、月末仕入のスポット価格である可能性があり、必ずしもリスクではない\n2. 納期に関しては、印刷業界慣習として2週間は通常範囲内。特急ではない\n3. 校正回数上限の懸念は妥当。文唱堂の標準契約では3回までだが、本見積には記載なし\n\n見落とされた点:\n- 配送費の取り扱いが不明 (含むか別か)\n- 検版の責任分界点が記載されていない",
+            },
+            rhetorica: {
+              model: "gemini-pro",
+              tokensIn: 2456,
+              tokensOut: 234,
+              cost: 0.12,
+              output: "リスクレベル: 中\n\n推奨アクション:\n見積を提出する前に以下3点を明確化:\n1. 校正回数の上限(標準3回を明記)\n2. 配送費の扱い(別途請求か込みか)\n3. 検版責任の分界点\n\n根拠:\n- 紙単価と納期に関するGRAMMATICAの懸念はLOGICAの業界知識で否定された\n- 校正回数と配送費はLOGICAが独自に指摘した実務上の重要点\n- これらが明確でない見積は後工程でトラブルの原因となる確率が高い",
+            },
+          },
+        },
+        {
+          type: "text",
+          text: "精査が完了しました。リスクレベルは「中」です。見積提出前に3点の明確化を推奨します。",
+        },
+        {
+          type: "code",
+          language: "json",
+          code: `{
+  "risk_level": "medium",
+  "action_items": [
+    "校正回数の上限を明記（標準3回）",
+    "配送費の扱いを明確化",
+    "検版責任の分界点を定義"
+  ],
+  "estimated_additional_cost": 0
+}`,
+        },
+      ],
+      timestamp: "2026-05-09T03:01:00+09:00",
+    },
+  ],
+}
 
 export const mockDashboardData = {
   tenantName: "文唱堂印刷",

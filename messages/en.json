@@ -147,9 +147,15 @@
   "builder": {
     "history": {
       "new": "+ New Conversation",
+      "search": "Search conversations...",
+      "pinned": "Pinned",
       "today": "Today",
       "thisWeek": "This Week",
-      "older": "Older"
+      "older": "Older",
+      "rename": "Rename",
+      "pin": "Pin",
+      "unpin": "Unpin",
+      "delete": "Delete"
     },
     "modeSelect": {
       "sonnet": "Sonnet",
@@ -158,19 +164,63 @@
     "proposedChange": {
       "title": "Proposed Change",
       "apply": "Apply",
-      "reject": "Reject"
+      "reject": "Reject",
+      "preview": "Preview"
     },
     "trivium": {
-      "final": "Final Conclusion"
+      "grammatica": "GRAMMATICA",
+      "logica": "LOGICA",
+      "rhetorica": "RHETORICA",
+      "final": "Final Conclusion",
+      "tokens": "tokens",
+      "cost": "cost"
     },
     "input": {
-      "placeholder": "Describe what you want to do..."
+      "placeholder": "Describe what you want to do...",
+      "send": "Send",
+      "sendHint": "⌘+Enter to send",
+      "attach": "Attach file",
+      "voice": "Voice input",
+      "mentionHint": "Reference table",
+      "commandHint": "Command"
     },
     "pending": {
       "title": "Pending Changes",
       "applyAll": "Apply All",
       "empty": "No pending changes yet",
-      "allApplied": "All changes applied ✓"
+      "allApplied": "All changes applied ✓",
+      "preview": "Preview",
+      "confirmApplyAll": "Apply {n} changes. Are you sure?",
+      "scope": "Scope",
+      "description": "Description",
+      "impact": "Affected Resources"
+    },
+    "code": {
+      "copy": "Copy",
+      "copied": "Copied"
+    },
+    "empty": {
+      "title": "How can I help you?",
+      "recentTables": "From recent tables",
+      "faq": "Common questions",
+      "prompts": {
+        "addField": "Add due date to invoices table",
+        "createWorkflow": "Create auto-research agent for new customers",
+        "aggregateView": "Create a view to aggregate this month's sales"
+      }
+    },
+    "shortcuts": {
+      "title": "Keyboard Shortcuts",
+      "send": "Send",
+      "newConversation": "New conversation",
+      "search": "Search palette",
+      "close": "Close"
+    },
+    "commands": {
+      "newTable": "Create new table",
+      "newWorkflow": "Create new workflow",
+      "run": "Run workflow",
+      "explain": "Explain"
     }
   },
   "workflows": {
