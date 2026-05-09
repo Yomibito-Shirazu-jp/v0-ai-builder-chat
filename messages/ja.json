@@ -147,9 +147,15 @@
   "builder": {
     "history": {
       "new": "+ 新しい会話",
+      "search": "会話を検索...",
+      "pinned": "ピン留め",
       "today": "今日",
       "thisWeek": "今週",
-      "older": "今週より前"
+      "older": "今週より前",
+      "rename": "名前を変更",
+      "pin": "ピン留め",
+      "unpin": "ピン解除",
+      "delete": "削除"
     },
     "modeSelect": {
       "sonnet": "Sonnet",
@@ -158,19 +164,63 @@
     "proposedChange": {
       "title": "提案された変更",
       "apply": "適用する",
-      "reject": "却下"
+      "reject": "却下",
+      "preview": "プレビュー"
     },
     "trivium": {
-      "final": "最終結論"
+      "grammatica": "GRAMMATICA",
+      "logica": "LOGICA",
+      "rhetorica": "RHETORICA",
+      "final": "最終結論",
+      "tokens": "トークン",
+      "cost": "コスト"
     },
     "input": {
-      "placeholder": "やりたいことを書いてください..."
+      "placeholder": "やりたいことを書いてください...",
+      "send": "送信",
+      "sendHint": "⌘+Enter で送信",
+      "attach": "ファイル添付",
+      "voice": "音声入力",
+      "mentionHint": "テーブルを参照",
+      "commandHint": "コマンド"
     },
     "pending": {
       "title": "保留中の変更",
       "applyAll": "すべて適用",
       "empty": "提案された変更はまだありません",
-      "allApplied": "すべての変更を適用しました ✓"
+      "allApplied": "すべての変更を適用しました ✓",
+      "preview": "プレビュー",
+      "confirmApplyAll": "{n}件の変更を適用します。よろしいですか?",
+      "scope": "対象",
+      "description": "説明",
+      "impact": "影響するリソース"
+    },
+    "code": {
+      "copy": "コピー",
+      "copied": "コピーしました"
+    },
+    "empty": {
+      "title": "何をお手伝いしましょう?",
+      "recentTables": "最近作成したテーブルから",
+      "faq": "よくある質問",
+      "prompts": {
+        "addField": "請求書テーブルに支払期日を追加",
+        "createWorkflow": "新規顧客の自動リサーチエージェントを作成",
+        "aggregateView": "今月の売上を集計するビュー"
+      }
+    },
+    "shortcuts": {
+      "title": "キーボードショートカット",
+      "send": "送信",
+      "newConversation": "新しい会話",
+      "search": "検索パレット",
+      "close": "閉じる"
+    },
+    "commands": {
+      "newTable": "新しいテーブルを作成",
+      "newWorkflow": "新しいワークフローを作成",
+      "run": "ワークフローを実行",
+      "explain": "説明する"
     }
   },
   "workflows": {
