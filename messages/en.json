@@ -375,23 +375,23 @@
       "title": "Sign Up",
       "subtitle": "Get started with kanribu-ai",
       "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
       "tenantName": "Organization Name",
       "tenantNameHelp": "You can change this later",
       "agpl": "I agree to the AGPLv3 License",
       "submit": "Sign Up",
       "google": "Sign up with Google",
-      "haveAccount": "Already have an account?",
+      "hasAccount": "Already have an account?",
       "signInLink": "Sign in"
     },
     "forgot": {
       "title": "Reset Password",
       "subtitle": "We'll send a reset link to your email",
       "submit": "Send Reset Link",
-      "sent": {
-        "title": "Email Sent",
-        "body": "A link has been sent to {email}. Check your spam folder if you don't see it."
-      },
-      "back": "Back to sign in"
+      "sent": "Email sent. Check your spam folder if you don't see it.",
+      "backToSignIn": "Back to sign in"
     },
     "tagline": "Deliver business data to AI.",
     "subtagline": "kanribu-ai — AGPLv3 OSS",

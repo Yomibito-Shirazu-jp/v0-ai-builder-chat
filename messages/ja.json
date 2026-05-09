@@ -375,23 +375,23 @@
       "title": "新規登録",
       "subtitle": "kanribu-ai を始めましょう",
       "name": "お名前",
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "confirmPassword": "パスワード確認",
       "tenantName": "組織名",
       "tenantNameHelp": "後で変更できます",
       "agpl": "AGPLv3 ライセンスに同意します",
       "submit": "新規登録",
       "google": "Google で新規登録",
-      "haveAccount": "既にアカウントをお持ちの方は",
+      "hasAccount": "既にアカウントをお持ちの方は",
       "signInLink": "ログイン"
     },
     "forgot": {
       "title": "パスワードを再設定",
       "subtitle": "登録済みのメールアドレスに再設定リンクを送ります",
       "submit": "再設定リンクを送信",
-      "sent": {
-        "title": "メールを送信しました",
-        "body": "{email} にリンクが届きます。届かない場合は迷惑メールフォルダもご確認ください。"
-      },
-      "back": "ログインに戻る"
+      "sent": "メールを送信しました。届かない場合は迷惑メールフォルダもご確認ください。",
+      "backToSignIn": "ログインに戻る"
     },
     "tagline": "業務データを、AI に届ける。",
     "subtagline": "kanribu-ai — AGPLv3 OSS",
