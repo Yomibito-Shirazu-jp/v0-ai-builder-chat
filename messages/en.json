@@ -1,0 +1,400 @@
+{
+  "common": {
+    "appName": "kanribu-ai",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "close": "Close",
+    "copy": "Copy",
+    "copied": "Copied",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search...",
+    "noResults": "No results",
+    "viewAll": "View all",
+    "comingSoon": "Coming soon"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "entities": "Tables",
+    "workflows": "Workflows",
+    "builder": "AI Builder",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "welcome": "Welcome back, {tenantName}",
+    "newChanges": "{n} new changes",
+    "stats": {
+      "entities": "Registered Tables",
+      "records": "New Records This Month",
+      "workflows": "Workflow Runs This Month"
+    },
+    "mcp": {
+      "title": "MCP Server / A2A Agent",
+      "status": {
+        "running": "Running",
+        "stopped": "Stopped"
+      },
+      "endpoint": "MCP Endpoint",
+      "a2aEndpoint": "A2A Agent Card",
+      "usage": "This month: {used}/{quota} calls"
+    },
+    "activity": {
+      "title": "Recent Changes",
+      "viewAll": "View all changes"
+    },
+    "builder": {
+      "title": "Build Quickly with AI Builder",
+      "placeholder": "Describe what you want to do...",
+      "prompts": {
+        "addDueDate": "Add due date to invoices table",
+        "createResearchAgent": "Create auto-research agent for new customers",
+        "aggregateSales": "Create a view to aggregate this month's sales"
+      }
+    }
+  },
+  "entities": {
+    "search": "Search tables...",
+    "recordSearch": "Search records...",
+    "create": "+ Create New Table",
+    "empty": {
+      "title": "Select a Table",
+      "subtitle": "Choose a table from the sidebar to get started"
+    },
+    "toolbar": {
+      "filter": "Filter",
+      "sort": "Sort",
+      "addRecord": "+ Add Record"
+    },
+    "views": {
+      "table": "Table",
+      "kanban": "Kanban",
+      "calendar": "Calendar",
+      "comingSoon": "Coming soon"
+    },
+    "bulk": {
+      "selected": "{n} selected",
+      "delete": "Delete",
+      "export": "Export",
+      "runWorkflow": "Run Workflow",
+      "deselect": "Deselect"
+    },
+    "pagination": "{from}-{to} of {total}"
+  },
+  "record": {
+    "lastUpdated": "Last updated: {user} updated {time}",
+    "runWorkflow": "Run Workflow",
+    "workflows": {
+      "empty": "No workflows for this table"
+    },
+    "menu": {
+      "duplicate": "Duplicate",
+      "export": "Export",
+      "delete": "Delete"
+    },
+    "section": {
+      "basic": "Basic Info",
+      "details": "Details"
+    },
+    "activity": {
+      "title": "Activity"
+    },
+    "related": {
+      "title": "Related Records",
+      "empty": "No related records",
+      "viewAll": "View all"
+    },
+    "info": {
+      "id": "ID",
+      "createdAt": "Created",
+      "createdBy": "Created by",
+      "updatedAt": "Last Updated",
+      "mcpExposed": "MCP Exposed"
+    },
+    "form": {
+      "create": {
+        "title": "Create New {entity}"
+      },
+      "edit": {
+        "title": "Edit {recordTitle}"
+      },
+      "draft": {
+        "saved": "Draft saved at {time}"
+      },
+      "saved": "Saved ✓",
+      "cancel": "Cancel",
+      "saveAndContinue": "Save and Create Another",
+      "save": "Save and Close",
+      "required": "This field is required",
+      "email": "Invalid email format",
+      "minValue": "Value must be at least {min}",
+      "maxValue": "Value must be at most {max}",
+      "referenceNotFound": "Please select a valid {target}"
+    },
+    "aiAssist": {
+      "title": "AI Assistant",
+      "regenerate": "Regenerate",
+      "askPlaceholder": "Ask about this field"
+    }
+  },
+  "builder": {
+    "history": {
+      "new": "+ New Conversation",
+      "today": "Today",
+      "thisWeek": "This Week",
+      "older": "Older"
+    },
+    "modeSelect": {
+      "sonnet": "Sonnet",
+      "trivium": "TRIVIUM Triad"
+    },
+    "proposedChange": {
+      "title": "Proposed Change",
+      "apply": "Apply",
+      "reject": "Reject"
+    },
+    "trivium": {
+      "final": "Final Conclusion"
+    },
+    "input": {
+      "placeholder": "Describe what you want to do..."
+    },
+    "pending": {
+      "title": "Pending Changes",
+      "applyAll": "Apply All",
+      "empty": "No pending changes yet",
+      "allApplied": "All changes applied ✓"
+    }
+  },
+  "workflows": {
+    "title": "Workflows",
+    "create": "+ New Workflow",
+    "search": "Search workflows...",
+    "filter": {
+      "trigger": "Trigger",
+      "status": "Status",
+      "all": "All",
+      "enabled": "Enabled",
+      "disabled": "Disabled"
+    },
+    "column": {
+      "name": "Name",
+      "target": "Target Table",
+      "trigger": "Trigger",
+      "agent": "Agent",
+      "a2a": "A2A Exposed",
+      "lastRun": "Last Run",
+      "monthlyRuns": "Runs This Month"
+    },
+    "empty": {
+      "title": "No Workflows Yet",
+      "subtitle": "Create one with AI Builder or set up manually",
+      "aiBuilder": "Use AI Builder",
+      "manual": "Create Manually"
+    },
+    "modal": {
+      "step1": {
+        "title": "When should it run?"
+      },
+      "step2": {
+        "title": "What should it do?"
+      },
+      "step3": {
+        "title": "Where should it output?"
+      }
+    },
+    "trigger": {
+      "manual": "Manual",
+      "onCreate": "On Create",
+      "onUpdate": "On Update",
+      "scheduled": "Scheduled",
+      "viaMcp": "Via MCP",
+      "viaA2a": "Via A2A"
+    },
+    "actions": {
+      "edit": "Edit",
+      "duplicate": "Duplicate",
+      "testRun": "Test Run",
+      "delete": "Delete"
+    }
+  },
+  "workflowDetail": {
+    "runNow": "Run Now",
+    "edit": "Edit",
+    "disable": "Disable",
+    "delete": "Delete",
+    "duplicate": "Duplicate",
+    "a2a": {
+      "show": "Show Agent Card"
+    },
+    "tabs": {
+      "config": "Configuration",
+      "history": "Run History",
+      "trivium": "TRIVIUM Trace"
+    },
+    "section": {
+      "trigger": "Trigger",
+      "agent": "Agent",
+      "schemas": "Input/Output Schema",
+      "outputs": "Outputs",
+      "outputsAdd": "+ Add Output"
+    },
+    "trivium": {
+      "grammatica": "GRAMMATICA (GPT-4) — Proposal",
+      "logica": "LOGICA (Claude Sonnet) — Critique",
+      "rhetorica": "RHETORICA (Gemini Pro) — Arbitration",
+      "final": "Final Conclusion",
+      "copy": "Copy",
+      "rerun": "Re-run",
+      "recordIssue": "Record as GitHub Issue",
+      "showPrompt": "Show Prompt",
+      "showInput": "Show Input"
+    },
+    "history": {
+      "runId": "Run ID",
+      "triggeredBy": "Triggered By",
+      "startedAt": "Started At",
+      "duration": "Duration",
+      "status": "Status",
+      "cost": "Cost",
+      "tokens": "Tokens"
+    }
+  },
+  "settings": {
+    "tabs": {
+      "general": "General",
+      "members": "Members",
+      "api": "API & Integrations",
+      "billing": "Billing",
+      "dangerZone": "Danger Zone"
+    },
+    "general": {
+      "tenantName": "Tenant Name",
+      "slug": "Slug",
+      "slugHelp": "Used in URL",
+      "locale": "Locale",
+      "timezone": "Timezone"
+    },
+    "members": {
+      "invite": "+ Invite Member",
+      "role": {
+        "admin": "Admin",
+        "editor": "Editor",
+        "viewer": "Viewer"
+      },
+      "inviteModal": {
+        "title": "Invite Member",
+        "email": "Email",
+        "role": "Role",
+        "message": "Message (optional)",
+        "send": "Send Invitation"
+      }
+    },
+    "api": {
+      "mcp": {
+        "title": "MCP Server",
+        "endpoint": "MCP Endpoint",
+        "auth": "Authentication",
+        "authApikey": "API Key",
+        "authOauth": "OAuth 2.0",
+        "comingSoon": "Coming soon",
+        "keysCreate": "+ Generate New API Key",
+        "keysWarning": "This key will only be shown once",
+        "entities": "Tables Accessible via MCP",
+        "usage": "Usage",
+        "usageThisMonth": "This month: {used} / {quota}",
+        "rateLimit": "Rate Limit"
+      },
+      "a2a": {
+        "title": "A2A Agents",
+        "cards": "Agent Cards",
+        "empty": "No agents exposed",
+        "showCard": "Show Agent Card JSON"
+      },
+      "webhooks": {
+        "title": "Webhooks",
+        "add": "+ Add Webhook",
+        "url": "URL",
+        "events": "Events",
+        "lastTriggered": "Last Triggered",
+        "status": "Status"
+      }
+    },
+    "billing": {
+      "currentPlan": "Current Plan",
+      "changePlan": "Change Plan",
+      "usage": "Usage",
+      "estimated": "Estimated bill this month: ¥{amount}",
+      "portal": "Open Stripe Customer Portal",
+      "history": "Invoice History",
+      "planIncludes": "Plan Includes",
+      "mcpCalls": "MCP Calls",
+      "triviumRuns": "TRIVIUM Runs",
+      "seats": "Seats",
+      "storage": "Storage"
+    },
+    "danger": {
+      "export": {
+        "title": "Export Data",
+        "button": "Download All Data as JSON",
+        "includeMcp": "Include MCP/A2A settings"
+      },
+      "delete": {
+        "title": "Delete Tenant",
+        "warning": "This action cannot be undone. All data will be permanently deleted.",
+        "confirm": "Enter tenant name ({slug}) to confirm",
+        "button": "Delete Permanently"
+      }
+    }
+  },
+  "auth": {
+    "signIn": {
+      "title": "Sign In",
+      "subtitle": "Access your account",
+      "email": "Email",
+      "password": "Password",
+      "forgot": "Forgot password?",
+      "submit": "Sign In",
+      "or": "or",
+      "google": "Sign in with Google",
+      "noAccount": "Don't have an account?",
+      "signUpLink": "Sign up",
+      "error": {
+        "invalid": "Invalid email or password",
+        "network": "Network error. Please try again later."
+      }
+    },
+    "signUp": {
+      "title": "Sign Up",
+      "subtitle": "Get started with kanribu-ai",
+      "name": "Name",
+      "tenantName": "Organization Name",
+      "tenantNameHelp": "You can change this later",
+      "agpl": "I agree to the AGPLv3 License",
+      "submit": "Sign Up",
+      "google": "Sign up with Google",
+      "haveAccount": "Already have an account?",
+      "signInLink": "Sign in"
+    },
+    "forgot": {
+      "title": "Reset Password",
+      "subtitle": "We'll send a reset link to your email",
+      "submit": "Send Reset Link",
+      "sent": {
+        "title": "Email Sent",
+        "body": "A link has been sent to {email}. Check your spam folder if you don't see it."
+      },
+      "back": "Back to sign in"
+    },
+    "tagline": "Deliver business data to AI.",
+    "subtagline": "kanribu-ai — AGPLv3 OSS",
+    "processing": "Processing..."
+  }
+}

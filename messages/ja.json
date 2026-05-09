@@ -1,0 +1,400 @@
+{
+  "common": {
+    "appName": "kanribu-ai",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "create": "作成",
+    "close": "閉じる",
+    "copy": "コピー",
+    "copied": "コピーしました",
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "success": "成功しました",
+    "confirm": "確認",
+    "back": "戻る",
+    "next": "次へ",
+    "previous": "前へ",
+    "search": "検索...",
+    "noResults": "結果がありません",
+    "viewAll": "すべて表示",
+    "comingSoon": "近日公開"
+  },
+  "nav": {
+    "dashboard": "ダッシュボード",
+    "entities": "テーブル",
+    "workflows": "ワークフロー",
+    "builder": "AI ビルダー",
+    "settings": "設定"
+  },
+  "dashboard": {
+    "welcome": "おかえりなさい、{tenantName}",
+    "newChanges": "{n}件の新着変更があります",
+    "stats": {
+      "entities": "登録テーブル",
+      "records": "今月の新規レコード",
+      "workflows": "今月のワークフロー実行"
+    },
+    "mcp": {
+      "title": "MCP サーバー / A2A エージェント",
+      "status": {
+        "running": "稼働中",
+        "stopped": "停止中"
+      },
+      "endpoint": "MCP エンドポイント",
+      "a2aEndpoint": "A2A エージェントカード",
+      "usage": "今月: {used}/{quota} 呼び出し"
+    },
+    "activity": {
+      "title": "最近の変更",
+      "viewAll": "すべての変更を表示"
+    },
+    "builder": {
+      "title": "AI ビルダーで素早く構築",
+      "placeholder": "やりたいことを書いてください...",
+      "prompts": {
+        "addDueDate": "請求書テーブルに支払期日を追加",
+        "createResearchAgent": "新規顧客の自動リサーチエージェントを作成",
+        "aggregateSales": "今月の売上を集計するビュー"
+      }
+    }
+  },
+  "entities": {
+    "search": "テーブル検索...",
+    "recordSearch": "レコード検索...",
+    "create": "+ 新しいテーブルを作成",
+    "empty": {
+      "title": "テーブルを選択してください",
+      "subtitle": "左のサイドバーから操作するテーブルを選びます"
+    },
+    "toolbar": {
+      "filter": "絞り込み",
+      "sort": "並び替え",
+      "addRecord": "+ レコード追加"
+    },
+    "views": {
+      "table": "テーブル",
+      "kanban": "カンバン",
+      "calendar": "カレンダー",
+      "comingSoon": "近日公開"
+    },
+    "bulk": {
+      "selected": "{n}件選択中",
+      "delete": "削除",
+      "export": "エクスポート",
+      "runWorkflow": "ワークフロー実行",
+      "deselect": "選択解除"
+    },
+    "pagination": "{from}-{to} / {total} 件"
+  },
+  "record": {
+    "lastUpdated": "最終更新: {user} が {time} に更新",
+    "runWorkflow": "ワークフロー実行",
+    "workflows": {
+      "empty": "このテーブルにワークフローはありません"
+    },
+    "menu": {
+      "duplicate": "複製",
+      "export": "エクスポート",
+      "delete": "削除"
+    },
+    "section": {
+      "basic": "基本情報",
+      "details": "詳細"
+    },
+    "activity": {
+      "title": "アクティビティ"
+    },
+    "related": {
+      "title": "関連レコード",
+      "empty": "関連するレコードはありません",
+      "viewAll": "すべて表示"
+    },
+    "info": {
+      "id": "ID",
+      "createdAt": "作成日",
+      "createdBy": "作成者",
+      "updatedAt": "最終更新",
+      "mcpExposed": "MCP 公開"
+    },
+    "form": {
+      "create": {
+        "title": "{entity}を新規作成"
+      },
+      "edit": {
+        "title": "{recordTitle}を編集"
+      },
+      "draft": {
+        "saved": "下書きを {time} に保存しました"
+      },
+      "saved": "保存しました ✓",
+      "cancel": "キャンセル",
+      "saveAndContinue": "保存して続けて作成",
+      "save": "保存して閉じる",
+      "required": "必須項目です",
+      "email": "メールアドレスの形式が正しくありません",
+      "minValue": "{min}以上の値を入力してください",
+      "maxValue": "{max}以下の値を入力してください",
+      "referenceNotFound": "存在する {target} を選択してください"
+    },
+    "aiAssist": {
+      "title": "AI アシスタント",
+      "regenerate": "再生成",
+      "askPlaceholder": "この項目について質問する"
+    }
+  },
+  "builder": {
+    "history": {
+      "new": "+ 新しい会話",
+      "today": "今日",
+      "thisWeek": "今週",
+      "older": "今週より前"
+    },
+    "modeSelect": {
+      "sonnet": "Sonnet",
+      "trivium": "TRIVIUM 三層合議"
+    },
+    "proposedChange": {
+      "title": "提案された変更",
+      "apply": "適用する",
+      "reject": "却下"
+    },
+    "trivium": {
+      "final": "最終結論"
+    },
+    "input": {
+      "placeholder": "やりたいことを書いてください..."
+    },
+    "pending": {
+      "title": "保留中の変更",
+      "applyAll": "すべて適用",
+      "empty": "提案された変更はまだありません",
+      "allApplied": "すべての変更を適用しました ✓"
+    }
+  },
+  "workflows": {
+    "title": "ワークフロー",
+    "create": "+ 新しいワークフロー",
+    "search": "ワークフロー検索...",
+    "filter": {
+      "trigger": "トリガー",
+      "status": "ステータス",
+      "all": "すべて",
+      "enabled": "有効",
+      "disabled": "無効"
+    },
+    "column": {
+      "name": "名前",
+      "target": "対象テーブル",
+      "trigger": "トリガー",
+      "agent": "エージェント",
+      "a2a": "A2A 公開",
+      "lastRun": "最終実行",
+      "monthlyRuns": "今月の実行回数"
+    },
+    "empty": {
+      "title": "まだワークフローがありません",
+      "subtitle": "AI ビルダーで自然言語で作るか、手動で設定できます",
+      "aiBuilder": "AI ビルダーで作る",
+      "manual": "手動で作成"
+    },
+    "modal": {
+      "step1": {
+        "title": "いつ実行しますか?"
+      },
+      "step2": {
+        "title": "どんな処理をしますか?"
+      },
+      "step3": {
+        "title": "結果をどこに出力しますか?"
+      }
+    },
+    "trigger": {
+      "manual": "手動",
+      "onCreate": "作成時",
+      "onUpdate": "更新時",
+      "scheduled": "スケジュール",
+      "viaMcp": "MCP経由",
+      "viaA2a": "A2A経由"
+    },
+    "actions": {
+      "edit": "編集",
+      "duplicate": "複製",
+      "testRun": "テスト実行",
+      "delete": "削除"
+    }
+  },
+  "workflowDetail": {
+    "runNow": "今すぐ実行",
+    "edit": "編集",
+    "disable": "無効化",
+    "delete": "削除",
+    "duplicate": "複製",
+    "a2a": {
+      "show": "Agent Card を表示"
+    },
+    "tabs": {
+      "config": "設定",
+      "history": "実行履歴",
+      "trivium": "TRIVIUM トレース"
+    },
+    "section": {
+      "trigger": "トリガー",
+      "agent": "エージェント",
+      "schemas": "入出力スキーマ",
+      "outputs": "出力先",
+      "outputsAdd": "+ 出力先を追加"
+    },
+    "trivium": {
+      "grammatica": "GRAMMATICA (GPT-4) — 提案",
+      "logica": "LOGICA (Claude Sonnet) — 批評",
+      "rhetorica": "RHETORICA (Gemini Pro) — 仲裁",
+      "final": "最終結論",
+      "copy": "コピー",
+      "rerun": "再実行",
+      "recordIssue": "GitHub Issue として記録",
+      "showPrompt": "プロンプトを表示",
+      "showInput": "入力を表示"
+    },
+    "history": {
+      "runId": "実行ID",
+      "triggeredBy": "トリガー",
+      "startedAt": "開始日時",
+      "duration": "所要時間",
+      "status": "ステータス",
+      "cost": "コスト",
+      "tokens": "トークン"
+    }
+  },
+  "settings": {
+    "tabs": {
+      "general": "一般",
+      "members": "メンバー",
+      "api": "API & 連携",
+      "billing": "課金",
+      "dangerZone": "危険ゾーン"
+    },
+    "general": {
+      "tenantName": "テナント名",
+      "slug": "スラッグ",
+      "slugHelp": "URL に使用されます",
+      "locale": "ロケール",
+      "timezone": "タイムゾーン"
+    },
+    "members": {
+      "invite": "+ メンバーを招待",
+      "role": {
+        "admin": "管理者",
+        "editor": "編集者",
+        "viewer": "閲覧者"
+      },
+      "inviteModal": {
+        "title": "メンバーを招待",
+        "email": "メールアドレス",
+        "role": "役割",
+        "message": "メッセージ（任意）",
+        "send": "招待を送信"
+      }
+    },
+    "api": {
+      "mcp": {
+        "title": "MCP サーバー",
+        "endpoint": "MCP エンドポイント",
+        "auth": "認証方式",
+        "authApikey": "API キー",
+        "authOauth": "OAuth 2.0",
+        "comingSoon": "近日公開",
+        "keysCreate": "+ 新しい API キーを生成",
+        "keysWarning": "このキーは二度と表示されません",
+        "entities": "MCP 経由でアクセス可能なテーブル",
+        "usage": "使用状況",
+        "usageThisMonth": "今月: {used} / {quota}",
+        "rateLimit": "レート制限"
+      },
+      "a2a": {
+        "title": "A2A エージェント",
+        "cards": "Agent Card 一覧",
+        "empty": "公開中のエージェントはありません",
+        "showCard": "Agent Card JSON を表示"
+      },
+      "webhooks": {
+        "title": "Webhooks",
+        "add": "+ Webhook を追加",
+        "url": "URL",
+        "events": "イベント",
+        "lastTriggered": "最終実行",
+        "status": "ステータス"
+      }
+    },
+    "billing": {
+      "currentPlan": "現在のプラン",
+      "changePlan": "プランを変更",
+      "usage": "使用量",
+      "estimated": "今月の予測請求額: ¥{amount}",
+      "portal": "Stripe カスタマーポータルを開く",
+      "history": "請求書履歴",
+      "planIncludes": "プランに含まれるもの",
+      "mcpCalls": "MCP 呼び出し",
+      "triviumRuns": "TRIVIUM 実行",
+      "seats": "シート",
+      "storage": "ストレージ"
+    },
+    "danger": {
+      "export": {
+        "title": "データのエクスポート",
+        "button": "全データを JSON でダウンロード",
+        "includeMcp": "MCP/A2A 設定を含めてエクスポート"
+      },
+      "delete": {
+        "title": "テナントを削除",
+        "warning": "この操作は取り消せません。すべてのデータが完全に削除されます。",
+        "confirm": "テナント名 ({slug}) を入力してください",
+        "button": "完全に削除する"
+      }
+    }
+  },
+  "auth": {
+    "signIn": {
+      "title": "ログイン",
+      "subtitle": "アカウントにアクセスします",
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "forgot": "パスワードを忘れた方",
+      "submit": "ログイン",
+      "or": "または",
+      "google": "Google でログイン",
+      "noAccount": "アカウントをお持ちでない方は",
+      "signUpLink": "新規登録",
+      "error": {
+        "invalid": "メールアドレスまたはパスワードが正しくありません",
+        "network": "通信エラーが発生しました。しばらくしてから再度お試しください。"
+      }
+    },
+    "signUp": {
+      "title": "新規登録",
+      "subtitle": "kanribu-ai を始めましょう",
+      "name": "お名前",
+      "tenantName": "組織名",
+      "tenantNameHelp": "後で変更できます",
+      "agpl": "AGPLv3 ライセンスに同意します",
+      "submit": "新規登録",
+      "google": "Google で新規登録",
+      "haveAccount": "既にアカウントをお持ちの方は",
+      "signInLink": "ログイン"
+    },
+    "forgot": {
+      "title": "パスワードを再設定",
+      "subtitle": "登録済みのメールアドレスに再設定リンクを送ります",
+      "submit": "再設定リンクを送信",
+      "sent": {
+        "title": "メールを送信しました",
+        "body": "{email} にリンクが届きます。届かない場合は迷惑メールフォルダもご確認ください。"
+      },
+      "back": "ログインに戻る"
+    },
+    "tagline": "業務データを、AI に届ける。",
+    "subtagline": "kanribu-ai — AGPLv3 OSS",
+    "processing": "処理中..."
+  }
+}
